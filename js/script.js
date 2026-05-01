@@ -12,6 +12,34 @@ const prices = {
   "Thar": 2500,
   "Activa": 500
 };
+document.addEventListener("DOMContentLoaded", function () {
+
+  const buttons = document.querySelectorAll(".type");
+  const categories = document.querySelectorAll(".category");
+  const viewAll = document.querySelector(".view-all");
+
+  // 🔥 CATEGORY SWITCH
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+
+      const target = this.getAttribute("data-category");
+
+      // remove active from all
+      buttons.forEach(btn => btn.classList.remove("active"));
+      categories.forEach(cat => cat.classList.remove("active"));
+
+      // add active to selected
+      this.classList.add("active");
+
+      const selectedCategory = document.getElementById(target);
+
+      if(selectedCategory){
+        selectedCategory.classList.add("active");
+      }
+
+    });
+  });
+});
 
 // TOAST
 function showToast(msg){
