@@ -7,9 +7,13 @@ const prices = {
   "Honda Amaze": 3200,
   "Maruti Brezza": 3200,
   "Ertiga": 3500,
-  
   "Swift": 3200,
   "Thar": 2500,
+  "Royal Enfield": 1200,
+  "KTM Duke": 1500,
+  "Access 125": 500,
+  "Honda Activa Electric": 700,
+  "tvs IQube": 900,
   "Activa": 500
 };
 document.addEventListener("DOMContentLoaded", function () {
